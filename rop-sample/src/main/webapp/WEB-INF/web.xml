@@ -6,16 +6,12 @@
          version="2.5">
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>
-            classpath*:sampleRopApplicationContext.xml
-        </param-value>
+        <param-value>classpath*:sampleRopApplicationContext.xml</param-value>
     </context-param>
 
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
-        <filter-class>
-            org.springframework.web.filter.CharacterEncodingFilter
-        </filter-class>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
         <init-param>
             <param-name>encoding</param-name>
             <param-value>UTF-8</param-value>
@@ -40,9 +36,7 @@
     <!--Rop框架请求捕获-->
     <servlet>
         <servlet-name>rop</servlet-name>
-        <servlet-class>
-            com.rop.RopServlet
-        </servlet-class>
+        <servlet-class>com.rop.RopServlet</servlet-class>
         <load-on-startup>2</load-on-startup>
     </servlet>
 
